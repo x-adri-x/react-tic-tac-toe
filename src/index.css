@@ -1,0 +1,97 @@
+.landing-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.landing-page-container h1,
+.landing-page-container h2 {
+  display: flex;
+  justify-self: center;
+  text-align: center;
+}
+
+.landing-page-container h1 {
+  align-self: flex-end;
+  font-size: 2.2rem;
+}
+
+.landing-page-container h2 {
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+}
+
+.welcome-container {
+  display: grid;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.submit-button {
+  height: 35px;
+  width: 100%;
+}
+
+.input-button {
+  height: 35px;
+  width: 40%;
+}
+
+@media screen and (width >= 575px) {
+  .main-game-container {
+    grid-template:
+      'header header header' 20%
+      'player-1 game-board player-2' 70%;
+  }
+
+  .landing-page-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .name-div {
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-content: flex-start;
+  }
+
+  table {
+    width: 60vh;
+    height: 60vh;
+  }
+
+  table.board-3 td {
+    font-size: 5rem;
+  }
+
+  table.board-4 td {
+    font-size: 4.6rem;
+  }
+
+  table.board-5 td {
+    font-size: 3.6rem;
+  }
+
+  table.board-6 td {
+    font-size: 3rem;
+  }
+
+  button {
+    width: 200px;
+    height: 10vh;
+  }
+
+  dialog {
+    width: 400px;
+    height: 45vh;
+    background-color: #31304d;
+    border: none;
+  }
+}
