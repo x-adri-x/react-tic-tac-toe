@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import Board from '@/components/Board'
 import History from './History'
+import { SetupContext } from '../SetupContext'
 
-export default function Game({ setup }) {
+export default function Game() {
+  const setup = useContext(SetupContext)
   const [gameKey, setGameKey] = useState(0)
   const [history, setHistory] = useState([])
   const [isReplay, setIsReplay] = useState(false)
@@ -24,11 +26,7 @@ export default function Game({ setup }) {
           Replay game
         </button>
       </header>
-      {isReplay ? (
-        <History history={history} setup={setup} />
-      ) : (
-        <Board key={gameKey} setup={setup} setHistory={setHistory} />
-      )}
+      {isReplay ? <History history={history} /> : <Board key={gameKey} setHistory={setHistory} />}
     </div>
   )
 }

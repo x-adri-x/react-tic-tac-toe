@@ -1,8 +1,10 @@
-import { useRef } from 'react'
+import { useContext, useRef } from 'react'
 import GamePlay from './GamePlay'
+import { SetupContext } from '../SetupContext'
 
-export default function History({ setup, history }) {
+export default function History({ history }) {
   console.log('setup history comp', setup)
+  const setup = useContext(SetupContext)
   const boardSize = parseInt(setup.size.split(' ')[0])
   const tableRef = useRef(null)
 

@@ -1,7 +1,9 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useContext } from 'react'
 import GamePlay from './GamePlay'
+import { SetupContext } from '../SetupContext'
 
-export default function Board({ setup, setHistory }) {
+export default function Board({ setHistory }) {
+  const setup = useContext(SetupContext)
   const [outcome, setOutcome] = useState('')
   const [activePlayer, setActivePlayer] = useState('player1')
   const [isGameOver, setIsGameOver] = useState(false)
