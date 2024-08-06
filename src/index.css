@@ -1,9 +1,8 @@
 .landing-page-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   height: 100vh;
-  width: 100vw;
+  justify-content: center;
+  padding-top: 10vh;
 }
 
 .landing-page-container h1,
@@ -47,8 +46,13 @@
 @media screen and (width >= 575px) {
   .main-game-container {
     grid-template:
-      'header header header' 20%
-      'player-1 game-board player-2' 70%;
+      'header header header'
+      'player-1 game-board player-2'
+      'game-play footer footer';
+  }
+
+  .landing-page-container {
+    flex-direction: column;
   }
 
   .landing-page-container h1 {

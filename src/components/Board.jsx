@@ -214,7 +214,6 @@ export default function Board({ setHistory }) {
     <>
       <div className="name-div player-1">
         <h1 id="player-1">{setup.player1Name}</h1>
-        {gamePlay.length > 0 && <GamePlay gamePlay={gamePlay} />}
       </div>
       <div className="name-div player-2">
         <h1 id="player-2">{setup.player2Name}</h1>
@@ -222,6 +221,7 @@ export default function Board({ setHistory }) {
       <div className="board-container" id="board-container">
         {createBoard()}
       </div>
+      {gamePlay.length > 0 && <GamePlay gamePlay={gamePlay} />}
       {outcome && <p>{outcome}</p>}
     </>
   )

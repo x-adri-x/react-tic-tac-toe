@@ -136,9 +136,10 @@ dialog > h1 {
 .main-game-container {
   display: grid;
   grid-template:
-    'header header' 30%
-    'player-1 player-2' 20%
-    'game-board game-board' 50%
+    'header header'
+    'player-1 player-2'
+    'game-board game-board'
+    'game-play game-play'
     'footer footer' auto/
     50% 50%;
 }
@@ -148,6 +149,10 @@ dialog > h1 {
   display: grid;
   justify-content: center;
   align-items: center;
+}
+
+.game-play-container {
+  grid-area: game-play;
 }
 
 table.board-3 td {

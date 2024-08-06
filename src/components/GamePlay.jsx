@@ -1,6 +1,6 @@
 export default function GamePlay({ gamePlay }) {
   return (
-    <div>
+    <div className="game-play-container">
       <h2>Gameplay: </h2>
       {gamePlay.map((move) => (
         <p key={move[0] + move[1]}>
