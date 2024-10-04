@@ -1,8 +1,5 @@
-import './App.css'
-import Welcome from '@/components/Welcome'
-import Game from '@/components/Game'
-import GameSetup from '@/components/GameSetup'
-import PlayerSetup from '@/components/PlayerSetup'
+import Game from '@/components/Game/'
+import Setup from '@/components/Setup/'
 import { SetupContext } from '@/SetupContext'
 import { useState } from 'react'
 
@@ -13,14 +10,12 @@ function App() {
 
   return (
     <>
-      <SetupContext.Provider value={setup}>
-        <section className="landing-page-container">
-          {!showBoard && <Welcome />}
-          <GameSetup setSetup={setSetup} />
-          <PlayerSetup heading={heading} setHeading={setHeading} setSetup={setSetup} setShowBoard={setShowBoard} />
+      <section className="flex min-h-full justify-center items-center h-screen md:flex-col lg:flex-col p-5 mx-auto">
+        <SetupContext.Provider value={setup}>
+          <Setup heading={heading} setHeading={setHeading} setSetup={setSetup} setShowBoard={setShowBoard} />
           {showBoard && <Game />}
-        </section>
-      </SetupContext.Provider>
+        </SetupContext.Provider>
+      </section>
     </>
   )
 }
