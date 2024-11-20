@@ -90,6 +90,6 @@ http://localhost:5173
 
 ## Preview
 
-<img src="src/assets/player-selection.png" alt="Player Customization" width=200 />
-<img src="src/assets/gameplay-1.png" alt="Game in progress" width=200 />
-<img src="src/assets/gameplay-2.png" alt="Game has ended" width=200 />
+<img src="src/assets/player-selection.png" alt="Player Customization" width=200 style="display: inline-block; margin-right: 10px;" />
+<img src="src/assets/gameplay-1.png" alt="Game in progress" width=200 style="display: inline-block; margin-right: 10px;" />
+<img src="src/assets/gameplay-2.png" alt="Game has ended" width=200 style="display: inline-block;" />
