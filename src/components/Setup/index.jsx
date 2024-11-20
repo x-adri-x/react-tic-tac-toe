@@ -5,7 +5,7 @@ import Button from './Button'
 
 const SYMBOLS = ['X', 'O', '👻', '💀', '🐧', '🐼']
 const BOARD_SIZES = ['3', '4', '5', '6']
-const GAME_MODES = ['Human vs. Human', 'Human vs. AI']
+const GAME_MODES = ['Human vs. Human']
 
 export default function Setup({ setSetup, heading, setHeading, setShowBoard }) {
   const [mode, setMode] = useState(GAME_MODES[0])

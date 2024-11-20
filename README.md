@@ -74,15 +74,22 @@ http://localhost:5173
 
 - After the game ends, you can review the match step-by-step to analyze the gameplay.
 
-## Scripts
+## Scripts
 
 - npm run dev: Start the development server.
 - npm run build: Build the project for production.
 - npm run preview: Preview the production build locally.
 - npm run lint: Lint the codebase using ESLint.
+- npm run format: Format the codebase using Prettier.
 
 ## Future Enhancements
 
 - Human vs. Machine and Human vs. AI modes.
 - Dark mode.
 - Additional themes for the game board.
+
+## Preview
+
+<img src="src/assets/player-selection.png" alt="Player Customization" width=200 />
+<img src="src/assets/gameplay-1.png" alt="Game in progress" width=200 />
+<img src="src/assets/gameplay-2.png" alt="Game has ended" width=200 />
